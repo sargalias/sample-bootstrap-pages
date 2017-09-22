@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Image Gallery</title>
+	<meta name="viewport" content="width=device-width">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- GOOGLE ANALYTICS START -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-102038759-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+	<!-- GOOGLE ANALYTICS END -->	
+
+
+</head>
+<body>
+
+<div class="sticky-footer"> <!--STICKY FOOTER-->
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Smith Photography</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><i class="fa fa-user-plus"></i> Sign Up</a></li>
+        <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<section id="intro">
+	<div class="container">
+		<div class="jumbotron">
+		  <h1><i class="fa fa-camera"> Image gallery</i></h1>
+		  <p>Awesome photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.</p>
+		</div>
+	</div>
+</section>
+
+<section id="images">
+	<div class="container">
+		<div class="col-md-4 col-sm-6">
+			<a data-toggle="modal" data-target="#modal1">
+				<img src="images/kalen-emsley-100238-690w.jpg" alt="" class="img-responsive">
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-6">
+			<a data-toggle="modal" data-target="#modal2">
+				<img src="images/alberto-restifo-95349-690w.jpg" alt="" class="img-responsive">
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-6">
+			<a data-toggle="modal" data-target="#modal3">
+				<img src="images/mahkeo-222763-690w.jpg" alt="" class="img-responsive">
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-6">
+			<a data-toggle="modal" data-target="#modal4">
+				<img src="images/anders-jilden-307322-690w.jpg" alt="" class="img-responsive">
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-6">
+			<a data-toggle="modal" data-target="#modal5">
+				<img src="images/jamison-mcandie-112375-690w.jpg" alt="" class="img-responsive">
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-6">
+			<a data-toggle="modal" data-target="#modal6">
+				<img src="images/teddy-kelley-181683-690w.jpg" alt="" class="img-responsive">
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-6">
+			<a data-toggle="modal" data-target="#modal7">
+				<img src="images/joshua-earle-157231-690w.jpg" alt="" class="img-responsive">
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-6">
+			<a data-toggle="modal" data-target="#modal8">
+				<img src="images/mahkeo-222765-690w.jpg" alt="" class="img-responsive">
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-6">
+			<a data-toggle="modal" data-target="#modal9">
+				<img src="images/valentin-antonini-274955-690w.jpg" alt="" class="img-responsive">
+			</a>
+		</div>
+	</div>
+</section>
+
+<div class="push"></div>
+</div> <!-- STICKY FOOTER -->
+
+<footer id="footer">
+	<p>&copy; John Smith 2017</p>
+</footer>
+
+
+<!-- MODALS START -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<img srcset="images/kalen-emsley-100238-690w.jpg 690w,
+										 images/kalen-emsley-100238-1000w.jpg 1000w,
+										 images/kalen-emsley-100238-1400w.jpg 1400w,
+										 images/kalen-emsley-100238-2000w.jpg 2000w"
+						 sizes="(max-width: 690px) 690w,
+						 				(max-width: 1000px) 1000w,
+						 				(max-width: 1400px) 1400w,
+						 				(max-width: 2000px) 2000w"
+					src="images/kalen-emsley-100238.jpg" alt="" class="img-responsive">
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <img srcset="images/alberto-restifo-95349-690w.jpg 690w,
+										 images/alberto-restifo-95349-1000w.jpg 1000w,
+										 images/alberto-restifo-95349-1400w.jpg 1400w,
+										 images/alberto-restifo-95349-2000w.jpg 2000w"
+						 sizes="(max-width: 690px) 690w,
+						 				(max-width: 1000px) 1000w,
+						 				(max-width: 1400px) 1400w,
+						 				(max-width: 2000px) 2000w"
+					src="images/alberto-restifo-95349.jpg" alt="" class="img-responsive">
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <img srcset="images/mahkeo-222763-690w.jpg 690w,
+										 images/mahkeo-222763-1000w.jpg 1000w,
+										 images/mahkeo-222763-1400w.jpg 1400w,
+										 images/mahkeo-222763-2000w.jpg 2000w"
+						 sizes="(max-width: 690px) 690w,
+						 				(max-width: 1000px) 1000w,
+						 				(max-width: 1400px) 1400w,
+						 				(max-width: 2000px) 2000w"
+					src="images/mahkeo-222763.jpg" alt="" class="img-responsive">
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<img srcset="images/anders-jilden-307322-690w.jpg 690w,
+										 images/anders-jilden-307322-1000w.jpg 1000w,
+										 images/anders-jilden-307322-1400w.jpg 1400w,
+										 images/anders-jilden-307322-2000w.jpg 2000w"
+						 sizes="(max-width: 690px) 690w,
+						 				(max-width: 1000px) 1000w,
+						 				(max-width: 1400px) 1400w,
+						 				(max-width: 2000px) 2000w"
+					src="images/anders-jilden-307322.jpg" alt="" class="img-responsive">
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <img srcset="images/jamison-mcandie-112375-690w.jpg 690w,
+										 images/jamison-mcandie-112375-1000w.jpg 1000w,
+										 images/jamison-mcandie-112375-1400w.jpg 1400w,
+										 images/jamison-mcandie-112375-2000w.jpg 2000w"
+						 sizes="(max-width: 690px) 690w,
+						 				(max-width: 1000px) 1000w,
+						 				(max-width: 1400px) 1400w,
+						 				(max-width: 2000px) 2000w"
+					src="images/jamison-mcandie-112375.jpg" alt="" class="img-responsive">
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <img srcset="images/teddy-kelley-181683-690w.jpg 690w,
+										 images/teddy-kelley-181683-1000w.jpg 1000w,
+										 images/teddy-kelley-181683-1400w.jpg 1400w,
+										 images/teddy-kelley-181683-2000w.jpg 2000w"
+						 sizes="(max-width: 690px) 690w,
+						 				(max-width: 1000px) 1000w,
+						 				(max-width: 1400px) 1400w,
+						 				(max-width: 2000px) 2000w"
+					src="images/teddy-kelley-181683.jpg" alt="" class="img-responsive">
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <img srcset="images/joshua-earle-157231-690w.jpg 690w,
+										 images/joshua-earle-157231-1000w.jpg 1000w,
+										 images/joshua-earle-157231-1400w.jpg 1400w,
+										 images/joshua-earle-157231-2000w.jpg 2000w"
+						 sizes="(max-width: 690px) 690w,
+						 				(max-width: 1000px) 1000w,
+						 				(max-width: 1400px) 1400w,
+						 				(max-width: 2000px) 2000w"
+					src="images/joshua-earle-157231.jpg" alt="" class="img-responsive">
+    </div>
+  </div>
+ </div>
+<div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <img srcset="images/mahkeo-222765-690w.jpg 690w,
+										 images/mahkeo-222765-1000w.jpg 1000w,
+										 images/mahkeo-222765-1400w.jpg 1400w,
+										 images/mahkeo-222765-2000w.jpg 2000w"
+						 sizes="(max-width: 690px) 690w,
+						 				(max-width: 1000px) 1000w,
+						 				(max-width: 1400px) 1400w,
+						 				(max-width: 2000px) 2000w"
+					src="images/mahkeo-222765.jpg" alt="" class="img-responsive">
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <img srcset="images/valentin-antonini-274955-690w.jpg 690w,
+										 images/valentin-antonini-274955-1000w.jpg 1000w,
+										 images/valentin-antonini-274955-1400w.jpg 1400w,
+										 images/valentin-antonini-274955-2000w.jpg 2000w"
+						 sizes="(max-width: 690px) 690w,
+						 				(max-width: 1000px) 1000w,
+						 				(max-width: 1400px) 1400w,
+						 				(max-width: 2000px) 2000w"
+					src="images/valentin-antonini-274955.jpg" alt="" class="img-responsive">
+    </div>
+  </div>
+</div>
+<!-- MODALS END -->
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

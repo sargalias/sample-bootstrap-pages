@@ -1,0 +1,110 @@
+
+body {
+	padding-top: 70px;
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+}
+
+section {
+	padding: 50px 0;
+}
+
+#testimonial {
+	background: gray;
+	color: black;
+	padding: 50px;
+	text-align: center;
+	background: #f1f1f1;
+}
+
+.testimonial-text {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.testimonial-cite {
+	font-size: 1.5rem;
+}
+
+.btn {
+	margin-top: 20px;
+	outline: none !important;
+}
+
+hr {
+	border: 1px solid #f1f1f1;
+	margin: 0;
+}
+
+
+footer {
+	text-align: center;
+	background: #f1f1f1;
+	height: 70px;
+}
+
+footer p {
+	margin-bottom: 0;
+	line-height: 70px;
+}
+
+.navbar {
+	background: white !important;
+	border-bottom: 0;
+}
+
+.navbar a {
+	color: black !important;
+}
+
+.navbar-nav li:hover a {
+	color: rgb(150, 150, 150) !important;
+}
+
+.navbar-brand {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+p, a {
+	font-size: 16px;
+}
+
+#info2 h2 {
+	margin-top: 10px;
+}
+
+#info2 div:nth-child(2) {
+	margin-top: 30px;
+}
+
+
+@media (min-width: 768px) {
+	#form {
+		background: url("images/olive-oil-4.png");
+		background-position: 80%;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	#info2 div:nth-child(2) {
+		margin-top: 0;
+	}	
+}
+
+@media (min-width: 992px) {
+	#form {
+		background-position: 75%;
+	}
+
+	.testimonial-text {
+		font-size: 3rem;
+		line-height: 1.7;
+		font-weight: 300;
+	}
+
+	.testimonial-cite {
+		font-size: 2rem;
+	}
+
+}

@@ -1,0 +1,106 @@
+
+
+/* COLORS */
+
+.navbar, footer {
+	background: #2c3e55;
+}
+
+footer {
+	background: #ecf0f3;
+	color: black;
+}
+
+.navbar a {
+	color: white !important;
+}
+
+.jumbotron {
+	color: #2c3e55;
+	background: #ecf0f3;
+}
+
+
+/* */
+.navbar-nav li:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+a {
+	text-decoration: none !important;
+}
+
+html, body {
+	height: 100%;
+	font-family: "Open Sans", sans-serif;
+}
+
+#images .img-responsive {
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+#images .img-responsive:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+
+.modal-content .close {
+	position: absolute;
+	right: 0px;
+	background: rgb(30, 30, 30);
+	width: 30px;
+	height: 30px;
+	color: white;
+}
+
+.modal-content img {
+	margin-bottom: 0;
+}
+
+.modal-dialog {
+	width: 80%;
+	text-align: center;
+	margin: 10px auto;
+}
+
+footer {
+	text-align: center;
+	padding: 30px;
+	vertical-align: middle;
+}
+
+footer p {
+	margin: auto 0;
+	font-size: 18px;
+}
+
+.push {
+	height: 85px;
+}
+
+.sticky-footer {
+	min-height: 100%;
+	margin-bottom: -85px;
+}
+
+.jumbotron {
+	padding: 15px;
+}
+
+@media (min-width: 768px) {
+	#images .img-responsive {
+		max-height: 220px;
+	}
+
+	.jumbotron {
+		padding: 30px;
+	}
+}
+
+@media (min-width: 992px) {
+	#images .img-responsive {
+		max-height: 188.88px;
+	}
+}

@@ -1,0 +1,99 @@
+
+html, body {
+	height: 100%;
+	overflow: auto;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+body {
+	background-color: black;
+}
+
+.background {
+	position: fixed;
+	left: 0;
+	right: 0;
+	background: url(camille-kmile-138067-768w-low.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: blur(5px);
+	height: 100%;
+}
+
+.main {
+	text-align: center;
+}
+
+h1 {
+	font-size: 4.5rem;
+	font-weight: bold;
+	color: #FFA3D1;
+}
+
+p {
+	font-size: 3.5rem;
+	font-weight: 300 !important;
+}
+
+.btn {
+	outline: none !important;
+}
+
+.btn-default {
+    border: 1px solid #f13009;
+    background: #f74a27;
+    color: #fff;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn-default:hover {
+    background: #f85f40;
+    color: white;
+    transition: 0.2s;
+}
+
+.fa-heart {
+	color: #FFA3D1;
+}
+
+.vertical-center {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 3rem;
+	}
+
+	p {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.background {
+		background: url('camille-kmile-138067-1800w-low.jpg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		filter: blur(5px);
+		height: 100%;
+	}
+
+}
+
+@media (min-width: 1800px) {
+	.background {
+		background: url('camille-kmile-138067-2400w-low.jpg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		filter: blur(5px);
+		height: 100%;
+	}
+}
